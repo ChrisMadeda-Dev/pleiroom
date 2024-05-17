@@ -1,24 +1,31 @@
 <script>
-    function checkDetails(){
-        const a = a
-    }
+	import { goto } from '$app/navigation';
+
+	function checkDetails() {
+		goto('/playroom');
+	}
 </script>
 
-
-<div class="h-[100vh] w-[100vw] bg-white flex flex-col justify-center items-center">
+<div class="h-[80vh] w-[100vw] bg-white flex flex-col justify-center items-center">
 	<div
-		class="h-[50vh] w-[50%] flex flex-col justify-center items-center rounded-lg border border-gray-300 bg-white gap-3"
+		class="h-[60vh] w-[60%] flex justify-center items-center rounded-lg border-gray-100 bg-white gap-3"
 	>
-		<input
-			type="text"
-			placeholder="Enter PLei code"
-			class="input input-bordered w-[50%] h-[70px] bg-gray-50"
-		/>
-		<input
-			type="text"
-			placeholder="Enter password"
-			class="input input-bordered w-[50%] h-[70px] bg-gray-50"
-		/>
-		<button class="btn btn-primary w-[50%]">Primary</button>
+		<section class="w-[40%] h-[100%] bg-blue-600">
+			<img src="/tv.jpeg" alt="musicphoto" class="object-cover w-full h-full" />
+		</section>
+
+		<section class="h-[100%] w-[60%] flex flex-col justify-center items-center gap-3">
+			<input
+				type="text"
+				placeholder="Enter PLei code"
+				class="input input-bordered w-[75%] h-[50px] bg-gray-50"
+			/>
+			<input
+				type="text"
+				placeholder="Enter password"
+				class="input input-bordered w-[75%] h-[50px] bg-gray-50"
+			/>
+			<button class="btn btn-neutral w-[75%]" on:click={checkDetails}>Enter</button>
+		</section>
 	</div>
 </div>

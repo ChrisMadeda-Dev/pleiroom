@@ -1,7 +1,9 @@
 <script>
 	import '../app.css';
+	import Navbar from '../components/Navbar.svelte';
 </script>
 
-<main>
+<main class="w-[100vw]">
+	<Navbar />
 	<slot />
 </main>

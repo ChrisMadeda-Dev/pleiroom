@@ -1,9 +1,11 @@
 <script>
 	import '../app.css';
+	import Footer from '../components/Footer.svelte';
 	import Navbar from '../components/Navbar.svelte';
 </script>
 
-<main class="w-[100vw]">
+<main class="overflow-x-hidden">
 	<Navbar />
 	<slot />
+	<Footer/>
 </main>
